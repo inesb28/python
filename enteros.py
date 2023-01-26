@@ -25,5 +25,12 @@ a = int(input("x^2: "))
 b = int(input("x: "))
 c = int(input("1: "))
 
-print((-b+math.sqrt(b**(2)-4*a*c))/(2*a))
-print((-b-math.sqrt(b**(2)-4*a*c))/(2*a))
+disc=(b**(2)-4*a*c)
+
+if disc<0:
+    print("no tiene solución")
+if disc==0:
+    print((-b+math.sqrt(disc))/(2*a))
+if disc>0:
+    print((-b+math.sqrt(disc))/(2*a))
+    print((-b-math.sqrt(disc))/(2*a))
