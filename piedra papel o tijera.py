@@ -1,6 +1,6 @@
 import random
 
-juego = input("Quieres jugar? ")
+juego = "si"
 
 while juego == "si":
 
